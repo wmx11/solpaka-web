@@ -3,6 +3,7 @@ import { Image } from "astro:assets";
 import SolpakaImage from "../../assets/solpaka.png";
 import SolpakaText from "../../assets/solpaka-text.png";
 import Button from "../../components/Button.astro";
+import Clipboard from "../Clipboard.astro";
 ---
 
 <section
@@ -32,7 +33,10 @@ import Button from "../../components/Button.astro";
           <p class="text-sm italic">
             Chill with SOLPAKA. Buy and grow some fleece.
           </p>
-          <p class="font-bold">Contract:</p>
+          <span class="flex gap-2 items-center">
+            <Clipboard copy="BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo" />
+            <p>Contract: BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo</p>
+          </span>
         </div>
       </div>
       <div class="flex items-center flex-wrap gap-4">

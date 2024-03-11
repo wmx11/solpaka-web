@@ -1,5 +1,6 @@
 ---
 import Button from "../../components/Button.astro";
+import Clipboard from "../../components/Clipboard.astro";
 ---
 
 <section class="py-24 px-2 md:px-0">
@@ -40,7 +41,7 @@ import Button from "../../components/Button.astro";
 
     <div class="space-y-8">
       <h2 class="text-4xl font-bold">
-        SOLPAKA Total Supply: <u>69,690,420,000</u> (That's a lot of fleece)
+        SOLPAKA Total Supply: <u>696,904,200</u> (That's a lot of fleece)
       </h2>
       <h2 class="text-xl">
         No taxes, no additional minting, no f00ks given by SOLPAKA. <br /> LP tokenas
@@ -51,7 +52,10 @@ import Button from "../../components/Button.astro";
         class="p-8 border-2 border-pink-500 rounded-md text-xl font-bold shadow-lg shadow-pink-500 mb-8"
       >
         <h2>SOLPAKA contract address:</h2>
-        <p>0x................</p>
+        <span class="flex gap-2 items-center">
+          <Clipboard copy="BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo" />
+          <p>BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo</p>
+        </span>
       </div>
       <div>
         <a href="#" target="_blank">
