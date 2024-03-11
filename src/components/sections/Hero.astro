@@ -1,0 +1,115 @@
+---
+import { Image } from "astro:assets";
+import SolpakaImage from "../../assets/solpaka.png";
+import SolpakaText from "../../assets/solpaka-text.png";
+import Button from "../../components/Button.astro";
+---
+
+<section class="min-h-screen py-24 flex items-center justify-center relative overflow-x-clip px-2 md:px-0">
+  <div
+    class="flex md:flex-row flex-col-reverse gap-16 items-center justify-between container mx-auto relative z-10"
+  >
+    <div class="space-y-8">
+      <div class="text-white">
+        <div class="font-bold text-4xl">Yooo, meet...</div>
+        <Image src={SolpakaText} alt="Solpaka" width={600} />
+        <h2 class="text-2xl mb-2">
+          SOLPAKA is the official "Unofficial" Solana Mascot
+        </h2>
+        <h3 class="text-md italic mb-8">
+          SOLPAKA does nothig. It's chill like that.
+        </h3>
+        <div class="p-4 rounded-md border-2 border-pink-500">
+          <p class="text-sm italic">
+            Chill with SOLPAKA. Buy and grow some fleece.
+          </p>
+          <p class="font-bold">Contract:</p>
+        </div>
+      </div>
+      <div class="flex items-center justify-between flex-wrap gap-4">
+        <a href="#" target="_blank">
+          <Button>Buy Your SOLPAKA</Button>
+        </a>
+        <a href="#" target="_blank">
+          <Button>Charts</Button>
+        </a>
+      </div>
+      <div class="flex items-center gap-4">
+        <div
+          class="bg-pink-500 shadow-lg shadow-pink-500 rounded-full w-[50px] h-[50px] flex items-center justify-center hover:scale-105 transition-transform"
+        >
+          <a href="#" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="25px"
+              height="25px"
+              viewBox="0 -28.5 256 256"
+              version="1.1"
+              preserveAspectRatio="xMidYMid"
+            >
+              <g>
+                <path
+                  d="M216.856339,16.5966031 C200.285002,8.84328665 182.566144,3.2084988 164.041564,0 C161.766523,4.11318106 159.108624,9.64549908 157.276099,14.0464379 C137.583995,11.0849896 118.072967,11.0849896 98.7430163,14.0464379 C96.9108417,9.64549908 94.1925838,4.11318106 91.8971895,0 C73.3526068,3.2084988 55.6133949,8.86399117 39.0420583,16.6376612 C5.61752293,67.146514 -3.4433191,116.400813 1.08711069,164.955721 C23.2560196,181.510915 44.7403634,191.567697 65.8621325,198.148576 C71.0772151,190.971126 75.7283628,183.341335 79.7352139,175.300261 C72.104019,172.400575 64.7949724,168.822202 57.8887866,164.667963 C59.7209612,163.310589 61.5131304,161.891452 63.2445898,160.431257 C105.36741,180.133187 151.134928,180.133187 192.754523,160.431257 C194.506336,161.891452 196.298154,163.310589 198.110326,164.667963 C191.183787,168.842556 183.854737,172.420929 176.223542,175.320965 C180.230393,183.341335 184.861538,190.991831 190.096624,198.16893 C211.238746,191.588051 232.743023,181.531619 254.911949,164.955721 C260.227747,108.668201 245.831087,59.8662432 216.856339,16.5966031 Z M85.4738752,135.09489 C72.8290281,135.09489 62.4592217,123.290155 62.4592217,108.914901 C62.4592217,94.5396472 72.607595,82.7145587 85.4738752,82.7145587 C98.3405064,82.7145587 108.709962,94.5189427 108.488529,108.914901 C108.508531,123.290155 98.3405064,135.09489 85.4738752,135.09489 Z M170.525237,135.09489 C157.88039,135.09489 147.510584,123.290155 147.510584,108.914901 C147.510584,94.5396472 157.658606,82.7145587 170.525237,82.7145587 C183.391518,82.7145587 193.761324,94.5189427 193.539891,108.914901 C193.539891,123.290155 183.391518,135.09489 170.525237,135.09489 Z"
+                  fill="#FFF"
+                  fill-rule="nonzero"
+                >
+                </path>
+              </g>
+            </svg></a
+          >
+        </div>
+        <div
+          class="bg-pink-500 shadow-lg shadow-pink-500 rounded-full w-[50px] h-[50px] flex items-center justify-center hover:scale-105 transition-transform"
+        >
+          <a href="#" target="_blank"
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              width="25px"
+              height="25px"
+              viewBox="0 -2 20 20"
+              version="1.1"
+            >
+              <g
+                id="Page-1"
+                stroke="none"
+                stroke-width="1"
+                fill="none"
+                fill-rule="evenodd"
+              >
+                <g
+                  id="Dribbble-Light-Preview"
+                  transform="translate(-60.000000, -7521.000000)"
+                  fill="#fff"
+                >
+                  <g id="icons" transform="translate(56.000000, 160.000000)">
+                    <path
+                      d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
+                      id="twitter-[#154]"
+                    >
+                    </path>
+                  </g>
+                </g>
+              </g>
+            </svg></a
+          >
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="z-10 relative">
+        <Image src={SolpakaImage} alt="Solpaka logo" width={650} class="z-10" />
+      </div>
+    </div>
+  </div>
+
+  <div
+    class="absolute bg-pink-500 h-[400px] w-[400px] blur-[300px] top-0 left-0 z-0"
+  >
+  </div>
+  <div
+    class="absolute bg-emerald-500 h-[400px] w-[400px] blur-[300px] bottom-0 right-0 z-0"
+  >
+  </div>
+</section>
