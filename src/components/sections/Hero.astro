@@ -2,36 +2,31 @@
 import { Image } from "astro:assets";
 import SolpakaImage from "../../assets/solpaka.png";
 import SolpakaText from "../../assets/solpaka-text.png";
+import SolpakaBg from "../../assets/bg.jpg";
 import Button from "../../components/Button.astro";
 import Clipboard from "../Clipboard.astro";
 ---
 
 <section
-  class="min-h-screen py-24 flex items-center justify-center relative overflow-x-clip px-2 md:px-0"
+  class="min-h-screen py-24 flex items-center justify-center relative overflow-x-clip px-2 md:px-0 overflow-hidden"
 >
+  <Image src={SolpakaBg} alt="bg" class="absolute inset-0 w-full" />
   <div
     class="flex md:flex-row flex-col-reverse gap-16 items-center justify-between container mx-auto relative z-10"
   >
     <div class="space-y-8 flex-1">
       <div class="text-white">
-        <div class="font-bold text-4xl">Welcome to</div>
+        <div class="font-bold text-4xl -rotate-6">Welcome to</div>
         <Image src={SolpakaText} alt="Solpaka" width={600} />
-        <h2 class="text-2xl mb-2">
+        <h2 class="text-3xl font-bold mb-2">
           SOLPAKA aims to become the official "Unofficial" Solana Mascot
         </h2>
         <h3 class="text-md italic mb-8">
           SOLPAKA does nothig. It's chill like that.
         </h3>
-        <p class="mb-8">
-          SOLPAKA, the new and rising star in the meme coin universe on the
-          SOLANA blockchain. Much like Dogecoin, SOLPAKA brings a playful twist
-          with its Alpaca-themed charm, just with the letter K, like ALPAKA.
-          Embrace the whimsical world of SOLPAKA, where crypto meets humor, and
-          join the journey toward the next big meme coin sensation on SOLANA.
-        </p>
         <div class="p-4 rounded-md border-2 border-pink-500">
-          <p class="text-sm italic">
-            Chill with SOLPAKA. Buy and grow some fleece.
+          <p class="text-sm italic mb-4">
+            Buy SOLPAKA. Chill with SOLPAKA. And grow fleece.
           </p>
           <span class="flex gap-2 items-center">
             <Clipboard copy="BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo" />
@@ -43,7 +38,7 @@ import Clipboard from "../Clipboard.astro";
       </div>
       <div class="flex flex-col md:flex-row items-center flex-wrap gap-4">
         <a href="#" target="_blank" class="flex-1 w-full">
-          <Button>Buy Your SOLPAKA</Button>
+          <Button>Buy SOLPAKA And Watch It Grow</Button>
         </a>
         <a href="#" target="_blank" class="flex-1 w-full">
           <Button>View Charts</Button>
@@ -52,10 +47,11 @@ import Clipboard from "../Clipboard.astro";
       <div>
         <p class="text-white mb-4">Socials:</p>
         <div class="flex items-center gap-4">
+          <!-- Discord -->
           <div
             class="bg-pink-500 shadow-lg shadow-pink-500 rounded-full w-[50px] h-[50px] flex items-center justify-center hover:scale-105 transition-transform"
           >
-            <a href="#" target="_blank"
+            <a href="https://discord.gg/tPyV6yRnTu" target="_blank"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -76,10 +72,11 @@ import Clipboard from "../Clipboard.astro";
               </svg></a
             >
           </div>
+          <!-- Twitter -->
           <div
             class="bg-pink-500 shadow-lg shadow-pink-500 rounded-full w-[50px] h-[50px] flex items-center justify-center hover:scale-105 transition-transform"
           >
-            <a href="#" target="_blank"
+            <a href="https://twitter.com/SOLPAKASolana" target="_blank"
               ><svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -112,13 +109,53 @@ import Clipboard from "../Clipboard.astro";
               </svg></a
             >
           </div>
+          <!-- Telegram -->
+          <div
+            class="bg-pink-500 shadow-lg shadow-pink-500 rounded-full w-[50px] h-[50px] flex items-center justify-center hover:scale-105 transition-transform"
+          >
+            <a href="https://t.me/Solpaka" target="_blank"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="25px"
+                height="25px"
+                fill="#fff"
+                version="1.1"
+                id="Layer_1"
+                viewBox="0 0 24 24"
+                xml:space="preserve"
+              >
+                <style type="text/css">
+                  .st0 {
+                    fill: none;
+                  }
+                </style>
+                <path
+                  d="M19.2,4.4L2.9,10.7c-1.1,0.4-1.1,1.1-0.2,1.3l4.1,1.3l1.6,4.8c0.2,0.5,0.1,0.7,0.6,0.7c0.4,0,0.6-0.2,0.8-0.4  c0.1-0.1,1-1,2-2l4.2,3.1c0.8,0.4,1.3,0.2,1.5-0.7l2.8-13.1C20.6,4.6,19.9,4,19.2,4.4z M17.1,7.4l-7.8,7.1L9,17.8L7.4,13l9.2-5.8  C17,6.9,17.4,7.1,17.1,7.4z"
+                ></path>
+                <rect y="0" class="st0" width="24" height="24"></rect>
+              </svg></a
+            >
+          </div>
         </div>
       </div>
     </div>
-    <div class="flex-1">
+    <div class="flex-1 space-y-4">
       <div class="z-10 relative">
-        <Image src={SolpakaImage} alt="Solpaka logo" width={650} class="z-10" />
+        <Image
+          src={SolpakaImage}
+          alt="Solpaka logo"
+          width={650}
+          class="z-10 float"
+        />
       </div>
+      <p class="text-white">
+        SOLPAKA, the new and rising star in the meme coin universe on the SOLANA
+        blockchain. Much like Dogecoin, SOLPAKA brings a playful twist with its
+        Alpaca-themed charm, just with the letter K, like ALPAKA. Embrace the
+        whimsical world of SOLPAKA, where crypto meets humor, and join the
+        journey toward the next big meme coin sensation on SOLANA.
+      </p>
     </div>
   </div>
 

@@ -1,68 +1,148 @@
 ---
 import Button from "../../components/Button.astro";
 import Clipboard from "../../components/Clipboard.astro";
+import HappyImage from "../../assets/pump_2.jpg";
+import RocketImage from "../../assets/rocket.jpg";
+import PumpImage from "../../assets/pump.jpg";
+import HappyImage2 from "../../assets/happy_2.jpg";
+import { Image } from "astro:assets";
 ---
 
 <section class="py-24 px-2 md:px-0">
-  <div class="container mx-auto text-white">
+  <div class="container mx-auto text-white relative">
     <div>
       <h1
-        class="font-bold text-5xl md:text-7xl drop-shadow-[3px_3px_0_rgba(236,72,153,1)]"
+        class="mb-4 text-center font-bold text-4xl md:text-8xl drop-shadow-[3px_3px_0_rgba(236,72,153,1)]"
       >
         SOLPAKA Tokenomics
       </h1>
-      <h2 class="text-xl">SOLPAKA spits on taxes and non-believers!</h2>
+      <h2 class="text-xl text-center">
+        SOLPAKA spits on taxes and non-believers!
+      </h2>
     </div>
 
     <div
       class="flex flex-col md:flex-row items-center justify-between gap-4 my-16 flex-wrap"
     >
       <div
-        class="p-8 border-2 w-full md:w-auto flex-1 border-pink-500 rounded-md text-4xl font-bold shadow-lg shadow-pink-500"
+        class="h-[259px] group rotate-3 flex items-center justify-center border-2 w-full md:w-auto flex-1 border-pink-500 rounded-md text-4xl font-bold shadow-lg shadow-pink-500 relative overflow-hidden"
       >
-        0% Taxes
+        <span
+          class="z-10 p-4 rounded-md group-hover:bg-white/10 backdrop-blur-md"
+          >0% Taxes</span
+        >
+        <Image
+          src={HappyImage}
+          alt="happy Solpaka"
+          class="absolute inset-0 translate-y-[225px] blur-xl group-hover:blur-none group-hover:translate-y-[25px] transition-transform"
+        />
       </div>
       <div
-        class="p-8 border-2 w-full md:w-auto flex-1 border-pink-500 rounded-md text-4xl font-bold shadow-lg shadow-pink-500"
+        class="h-[259px] group -rotate-3 flex items-center justify-center border-2 w-full md:w-auto flex-1 border-pink-500 rounded-md text-4xl font-bold shadow-lg shadow-pink-500 relative overflow-hidden"
       >
-        0 Minting
+        <span
+          class="z-10 p-4 rounded-md group-hover:bg-white/10 backdrop-blur-md"
+        >
+          0 Minting</span
+        >
+        <Image
+          src={HappyImage2}
+          alt="happy Solpaka"
+          class="absolute inset-0 translate-y-[225px] blur-xl group-hover:blur-none group-hover:translate-y-[25px] transition-transform"
+        />
       </div>
       <div
-        class="p-8 border-2 w-full md:w-auto flex-1 border-pink-500 rounded-md text-4xl font-bold shadow-lg shadow-pink-500"
+        class="h-[259px] group rotate-3 flex items-center justify-center border-2 w-full md:w-auto flex-1 border-pink-500 rounded-md text-4xl font-bold shadow-lg shadow-pink-500 relative overflow-hidden"
       >
-        0% F00ks
+        <span
+          class="z-10 p-4 rounded-md group-hover:bg-white/10 backdrop-blur-md"
+        >
+          0% F00ks</span
+        >
+        <Image
+          src={RocketImage}
+          alt="happy Solpaka"
+          class="absolute inset-0 w-full translate-y-[225px] blur-xl group-hover:blur-none group-hover:translate-y-[25px] transition-transform"
+        />
       </div>
       <div
-        class="p-8 border-2 w-full md:w-auto flex-1 border-pink-500 rounded-md text-4xl font-bold shadow-lg shadow-pink-500"
+        class="h-[259px] group -rotate-3 flex items-center justify-center border-2 w-full md:w-auto flex-1 border-pink-500 rounded-md text-4xl font-bold shadow-lg shadow-pink-500 relative overflow-hidden"
       >
-        100% LP Burns
+        <span
+          class="z-10 p-4 rounded-md group-hover:bg-white/10 backdrop-blur-md"
+        >
+          LP Locked</span
+        >
+        <Image
+          src={PumpImage}
+          alt="happy Solpaka"
+          class="absolute inset-0 w-full translate-y-[225px] blur-xl group-hover:blur-none group-hover:translate-y-[25px] transition-transform"
+        />
       </div>
     </div>
 
-    <div class="space-y-8">
-      <h2 class="text-4xl font-bold">
-        SOLPAKA Total Supply: <u>696,904,200</u> (That's a lot of fleece)
-      </h2>
-      <h2 class="text-xl">
-        No taxes, no additional minting, no f00ks given by SOLPAKA. <br /> LP tokenas
-        are burned and contract ownership is renounced. Just like that... Chill and
-        spit on the non-believers!
-      </h2>
-      <div
-        class="p-8 border-2 border-pink-500 rounded-md text-xl font-bold shadow-lg shadow-pink-500 mb-8"
-      >
-        <h2>SOLPAKA contract address:</h2>
-        <span class="flex gap-2 items-center">
-          <Clipboard copy="BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo" />
-          <p class="break-all">
-            BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo
-          </p>
-        </span>
+    <div class="flex flex-col-reverse md:flex-row flex-wrap gap-16 relative h-full">
+      <div class="space-y-8 flex-1 sticky top-10 h-full">
+        <div class="space-y-8">
+          <div>
+            <p class="text-4xl font-bold">
+              Total supply: <u>696,904,200</u>
+              <p class="text-sm">That's a lot of fleece</p>
+            </p>
+          </div>
+          <div>
+            <p class="text-4xl font-bold">
+              Team allocation: <u>139,380,840 (20%)</u>
+              <p class="text-sm">
+                Feed the Paka the SOLPAKA owners. Grassfed owners are tamer.
+              </p>
+            </p>
+          </div>
+          <div>
+            <p class="text-4xl font-bold">
+              Seed allocation: <u>209,071,260 (30%)</u>
+              <p class="text-sm">Early farmer gets the Paka the SOLPAKA.</p>
+            </p>
+          </div>
+          <div>
+            <p class="text-4xl font-bold">
+              LP allocation: <u>348,452,100 (50%)</u>
+              <p class="text-sm">
+                Anyone can go head an pet the Paka the SOLPAKA with their SOL
+                tokens. Keep it classy. LP tokens are burned.
+              </p>
+            </p>
+          </div>
+        </div>
+
+        <div
+          class="p-8 border-2 border-pink-500 rounded-md text-xl font-bold shadow-lg shadow-pink-500 mb-8"
+        >
+          <p>SOLPAKA contract address:</p>
+          <span class="flex gap-2 items-center">
+            <Clipboard copy="BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo" />
+            <p class="break-all">
+              BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo
+            </p>
+          </span>
+        </div>
+        <div>
+          <a href="#" target="_blank">
+            <Button>Buy SOLPAKA And Watch It Grow</Button>
+          </a>
+        </div>
       </div>
-      <div>
-        <a href="#" target="_blank">
-          <Button>Buy Your SOLPAKA</Button>
-        </a>
+      <div class="flex-1">
+        <Image
+          src={HappyImage}
+          alt="happy Solpaka"
+          class="rounded-md mb-4 float"
+        />
+        <p2 class="text-xl">
+          No taxes, no additional minting, no f00ks given by SOLPAKA. <br /> LP tokenas
+          are burned and contract ownership is renounced. Just like that... Chill
+          and spit on the non-believers!
+        </p2>
       </div>
     </div>
   </div>

@@ -6,7 +6,11 @@ interface Props {
 const { copy } = Astro.props;
 ---
 
-<span class="cursor-pointer" data-clipboard={copy} title="Copy">
+<span
+  class="cursor-pointer p-2 bg-pink-500 rounded-md"
+  data-clipboard={copy}
+  title="Copy"
+>
   <svg
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
