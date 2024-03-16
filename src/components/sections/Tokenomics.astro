@@ -5,6 +5,8 @@ import PumpImage2 from "../../assets/pump_2.jpg";
 import RocketImage from "../../assets/rocket.jpg";
 import PumpImage from "../../assets/pump.jpg";
 import HappyImage2 from "../../assets/happy_2.jpg";
+import Dextools from "../../assets/dextools.png";
+import Dexscreener from "../../assets/dexscreener.png";
 import { Image } from "astro:assets";
 ---
 
@@ -144,13 +146,48 @@ import { Image } from "astro:assets";
             </p>
           </span>
         </div>
-        <div>
-          <a
-            href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo&fixed=in"
-            target="_blank"
-          >
-            <Button>Buy SOLPAKA And Watch It Grow</Button>
-          </a>
+        <div class="flex flex-col gap-4">
+          <div class="flex gap-4">
+            <a
+              href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo&fixed=in"
+              target="_blank"
+              class="flex-1 w-full"
+            >
+              <Button>Buy on Raydium</Button>
+            </a>
+            <a
+              href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo&fixed=in"
+              target="_blank"
+              class="flex-1 w-full"
+            >
+              <Button>Buy on Jupiter</Button>
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://dexscreener.com/solana/6mprd9lm5yycftwlcxlnb5zrm5vnup3ffv3vqtvajaza"
+              target="_blank"
+              class="flex-1 w-full"
+            >
+              <Button
+                className="bg-purple-500 flex gap-2 items-center justify-center mb-4"
+                ><Image src={Dexscreener} alt="dextools logo" width="25" />
+                <span>Dexscreener</span>
+              </Button>
+            </a>
+            <a
+              href="https://www.dextools.io/app/en/solana/pair-explorer/6mPrd9LM5yycFTwLcXLNB5zrm5VNUp3fFv3vQtvaJAzA?t=1710530811725"
+              target="_blank"
+              class="flex-1 w-full"
+            >
+              <Button
+                className="bg-purple-500 flex gap-2 items-center justify-center"
+              >
+                <Image src={Dextools} alt="dextools logo" width="25" />
+                <span>Dextools</span>
+              </Button>
+            </a>
+          </div>
         </div>
       </div>
       <div class="flex-1">
@@ -161,7 +198,7 @@ import { Image } from "astro:assets";
         />
         <p2 class="text-xl">
           No taxes, no additional minting, no f00ks given by SOLPAKA. <br /> LP tokenas
-          are burned and contract ownership is renounced. Just like that... Chill
+          are burned. Just like that... Chill
           and spit on the non-believers!
         </p2>
       </div>

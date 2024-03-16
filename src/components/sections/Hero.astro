@@ -3,6 +3,8 @@ import { Image } from "astro:assets";
 import SolpakaImage from "../../assets/solpaka.png";
 import SolpakaText from "../../assets/solpaka-text.png";
 import SolpakaBg from "../../assets/bg.jpg";
+import Dextools from "../../assets/dextools.png";
+import Dexscreener from "../../assets/dexscreener.png";
 import Button from "../../components/Button.astro";
 import Clipboard from "../Clipboard.astro";
 ---
@@ -47,28 +49,48 @@ import Clipboard from "../Clipboard.astro";
           </span>
         </div>
       </div>
-      <div class="flex flex-col md:flex-row items-center flex-wrap gap-4">
-        <a
-          href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo&fixed=in"
-          target="_blank"
-          class="flex-1 w-full"
-        >
-          <Button>Buy And Grow</Button>
-        </a>
-        <a
-          href="https://dexscreener.com/solana/6mprd9lm5yycftwlcxlnb5zrm5vnup3ffv3vqtvajaza"
-          target="_blank"
-          class="flex-1 w-full"
-        >
-          <Button>Dexscreener</Button>
-        </a>
-        <a
-          href="https://www.dextools.io/app/en/solana/pair-explorer/6mPrd9LM5yycFTwLcXLNB5zrm5VNUp3fFv3vQtvaJAzA?t=1710530811725"
-          target="_blank"
-          class="flex-1 w-full"
-        >
-          <Button>Dextools</Button>
-        </a>
+      <div class="flex flex-col gap-4">
+        <div class="flex gap-4">
+          <a
+            href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo&fixed=in"
+            target="_blank"
+            class="flex-1 w-full"
+          >
+            <Button>Buy on Raydium</Button>
+          </a>
+          <a
+            href="https://raydium.io/swap/?inputCurrency=sol&outputCurrency=BDHqX9YfJE3M6caox3obUX5YpWHz2cjnGFiZJtRghdCo&fixed=in"
+            target="_blank"
+            class="flex-1 w-full"
+          >
+            <Button>Buy on Jupiter</Button>
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://dexscreener.com/solana/6mprd9lm5yycftwlcxlnb5zrm5vnup3ffv3vqtvajaza"
+            target="_blank"
+            class="flex-1 w-full"
+          >
+            <Button
+              className="bg-purple-500 flex gap-2 items-center justify-center mb-4"
+              ><Image src={Dexscreener} alt="dextools logo" width="25" />
+              <span>Dexscreener</span>
+            </Button>
+          </a>
+          <a
+            href="https://www.dextools.io/app/en/solana/pair-explorer/6mPrd9LM5yycFTwLcXLNB5zrm5VNUp3fFv3vQtvaJAzA?t=1710530811725"
+            target="_blank"
+            class="flex-1 w-full"
+          >
+            <Button
+              className="bg-purple-500 flex gap-2 items-center justify-center"
+            >
+              <Image src={Dextools} alt="dextools logo" width="25" />
+              <span>Dextools</span>
+            </Button>
+          </a>
+        </div>
       </div>
       <div>
         <p class="text-white mb-4">Socials:</p>
@@ -176,11 +198,11 @@ import Clipboard from "../Clipboard.astro";
         />
       </div>
       <p class="text-white">
-        SOLPAKA, the new and rising star in the meme coin universe on the SOLANA
-        blockchain. Much like Dogecoin, SOLPAKA brings a playful twist with its
-        Alpaca-themed charm, just with the letter K, like ALPAKA. Embrace the
-        whimsical world of SOLPAKA, where crypto meets humor, and join the
-        journey toward the next big meme coin sensation on SOLANA.
+        SOLPAKA is a community-driven token aiming to build a strong and vibrant
+        community in the Solana ecosystem. SOLPAKA is a meme coin but it does
+        not stop it from being one of the most loved and admired tokens on
+        Solana. SOLPAKA aims to build a strong foundation of open-minded people
+        and continue building and investing in new, long-term projects.
       </p>
     </div>
   </div>
